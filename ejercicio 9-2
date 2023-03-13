@@ -1,0 +1,19 @@
+lista_num = [2,4,8,6,5,9,7,1]
+
+def impares(num):
+    if num % 2 != 0:
+        return True
+
+# Filtramos la lista para que solo queden los numeros impares
+lista_impares = filter(impares,lista_num)
+a = list(lista_impares)
+print(a)
+
+
+
+def suma(a,b):
+    return a + b
+
+# Reducimos los elemento de la lista a uno sumandolos todos
+suma_impares = reduce(suma,a)
+print(suma_impares)
